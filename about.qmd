@@ -2,8 +2,8 @@
 title: "About"
 ---
 
-Welcome to my website !!
+Welcome to my website!!
 
-```{r}
-1 + 1
-```
+I am Sherise Tan, a Year 2 Psychology Undergraduate taking the course of NM2207 this semester! I love listening to kpop and chill game sessions.
+
+My identified data set is the National Retail Foundation's Consumer Data Survey on Valentines Day from 2010 to 2022. This data set can be found to come from Suraj Das on Kaggle that can be accessed through the link below: https://www.kaggle.com/datasets/infinator/happy-valentines-day-2022
