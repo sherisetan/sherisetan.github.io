@@ -5,8 +5,9 @@ account: sherisetan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11570458
-bundleId: 8408718
+bundleId: 8408793
 url: https://sherisetan.shinyapps.io/sample_app/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: www/nrf-logo.png
