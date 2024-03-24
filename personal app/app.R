@@ -24,8 +24,8 @@ ui <- fluidPage(
       # Input: Selector for choosing dataset ----
       selectInput(inputId = "SpendingTrends",
                   label = "Dataset",
-                  choices = c("Total Spenditure"= "total_spending",
-                              "Spenditure Per Person" = "historical_spending"),
+                  choices = c("Total Expenditure"= "total_spending",
+                              "Spending Per Person" = "historical_spending"),
                   selected = "total_spending"),
       
       h6("Data is from National Retail Foundation, Extracted by Suraj Das on Kaggle")
@@ -58,7 +58,7 @@ server <- function(input, output) {
         geom_point(colour="red")+ 
         labs(x="Year",
              y="Total Spent in Billions($B)",
-             title="Total Spenditure Across the Years ")
+             title="Total Expenditure Across the Years ")
     } else if (input$SpendingTrends == "historical_spending") {
       # Plot for historical_spending dataset
       ggplot(historical_spending, aes(x = Year,y=PerPerson)) + geom_area(fill="pink")+
