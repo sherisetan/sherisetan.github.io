@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "sherisetan.github.io"
+  title: "NM2207 Datastory by Sherise Tan Qin Lin"
   navbar:
     left:
       - href: index.qmd
@@ -11,7 +11,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: journal
     css: styles.css
     toc: true
 

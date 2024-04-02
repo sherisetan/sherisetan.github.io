@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 
 library(tidyverse)
-historical_spending <- read.csv("historical_spending.csv")
+gifts_gender <- read.csv("historical_spending.csv")
 total_spending <-read.csv("total_spending_billions.csv")
 
 # Define UI for dataset viewer app ----
