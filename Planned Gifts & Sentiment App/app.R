@@ -4,7 +4,7 @@ library(tidyverse)
 library(RColorBrewer)
 
 # Read data
-gifts_gender <- read.csv("gifts_gender.csv")
+noValentines<- read.csv("Xcelebratingbutstillmarking(G).csv")
 POValentines <- read.csv("point_of_valentines.csv")
 
 # UI
@@ -12,13 +12,14 @@ ui <- fluidPage(
   titlePanel("Sentiments towards Valentines Day"),
   sidebarLayout(
     sidebarPanel(
-      checkboxInput("show_gifts_gender", "Show Planned Gifts by Gender", value = FALSE)
+      checkboxInput("show_noValentines", "Show How People are marking Valentines Day Despite not celebrating ", 
+                    value = FALSE)
     ),
     mainPanel(
       fluidRow(
         column(6, billboarderOutput("male_pie_chart")),
         column(6, billboarderOutput("female_pie_chart")),
-        column(12, billboarderOutput("gifts_gender_chart"))
+        column(12, billboarderOutput("noValentines_chart"))
       )
     )
   )
@@ -34,7 +35,6 @@ server <- function(input, output) {
     billboarder() %>%
       bb_piechart(data = male_data, label = "Point", values = "Men") %>%
       bb_color(palette = brewer.pal(n = 5, name = "Blues")) %>%
-      bb_legend(position = 'right') %>%
       bb_title("Men")
   })
   
@@ -45,21 +45,20 @@ server <- function(input, output) {
     billboarder() %>%
       bb_piechart(data = female_data, label = "Point", values = "Women") %>%
       bb_color(palette = brewer.pal(n = 5, name = "Oranges")) %>%
-      bb_legend(position = 'right') %>%
       bb_title("Women")
   })
   
   # Render gifts by gender chart if checkbox is checked
-  output$gifts_gender_chart <- renderBillboarder({
-    if (input$show_gifts_gender) {
-      new_gifts_gender <- gifts_gender %>% 
-        select(Gender, Candy, Flowers, Jewelry, GreetingCards, EveningOut, Clothing, GiftCards)
-      billboarder() %>% 
-        bb_barchart(data = new_gifts_gender) %>% 
+  output$noValentines_chart <- renderBillboarder({
+    if (input$show_noValentines) {
+      new_no_valentines <- NOvalentines %>% 
+        slice(1:3) %>%
+        rename(Reasons= Percent.of.those.not.celebrating.Valentine.s.Day.still.marking.the.occasion) 
+      billboarder() %>% bb_barchart(data = new_no_valentines, stacked = T,position = "fill") %>% 
         bb_color(palette = brewer.pal(n = 5, name = "RdPu")) %>% 
         bb_legend(position = 'right') %>% 
-        bb_title("Planned Gifts By Gender") %>% 
-        bb_labs(x ="Gender", y ="Percentage(%)")
+        bb_title("Reasons for marking occasion despite not celebrating") %>% 
+        bb_labs(x = "Gender", y = "Percentage(%)")
     }
   })
 }

@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "NM2207 Datastory by Sherise Tan Qin Lin"
+  title: "Sherise Tan Qin Lin"
   navbar:
     left:
       - href: index.qmd

@@ -5,7 +5,7 @@ account: sherisetan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11641614
-bundleId: 8444922
+bundleId: 8444976
 url: https://sherisetan.shinyapps.io/Sentiments_app/
 version: 1
 asMultiple: FALSE
