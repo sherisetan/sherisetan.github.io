@@ -1,8 +1,9 @@
 library(shiny)
-library(ggplot2)
 library(tidyverse)
+library(ggplot2)
 library(billboarder)
 library(RColorBrewer)
+
 gifts_gender <- read.csv("gifts_gender.csv")
 historical_spending <- read.csv("historical_spending_copy1 copy.csv")
 gifts_age <- read.csv("gifts_age.csv")
@@ -12,31 +13,19 @@ ui <- fluidPage(
   
   
   # App title ----
-  titlePanel("Overview on Valentines Day Spending"),
+  titlePanel("Quantitative Sentiments"),
   
   # Sidebar layout with a input and output definitions ----
   sidebarLayout(
     
     # Sidebar panel for inputs ----
-    sidebarPanel(
-      
-      # Input: Selector for choosing dataset ----
-      selectInput(inputId = "QuantitativeSentiments",
-                  label = "Dataset",
-                  choices = c("Planned Gifts Per Gender"= "gifts_gender",
-                              "Percentage of People Celebrating" = "historical_spending",
-                              "Percentage of people spending Across Ages" = "gifts_age"),
-                  selected = "historical_spending"),
-      
-      h6("Data is from National Retail Foundation, Extracted by Suraj Das on Kaggle")
-      
-    ),
+    sidebarPanel(),
     
     # Main panel for displaying outputs ----
     mainPanel(
-      
-      plotOutput("visualgraphs")
-      
+      fluidRow(column(12, billboarderOutput("Percent_Celebrating")),
+               column(12, billboarderOutput("Spending_by_Age")),
+               column(12, billboarderOutput("Planned_Gifts_By_Gender_chart")))
     )
   )
 )
@@ -45,34 +34,33 @@ ui <- fluidPage(
 # Define server logic to summarize and view selected dataset ----
 server <- function(input, output) {
   
-  output$visualgraphs <- renderPlot({
-    selected_dataset <- switch(input$QuantitativeSentiments,
-                               "gifts_gender" = gifts_gender,
-                               "historical_spending" = historical_spending,
-                               "gifts_age" = gifts_age)
-    
-    
-    if (input$QuantitativeSentiments == "gifts_gender" ) {
+  
+    output$Planned_Gifts_By_Gender_chart <- renderBillboarder({
       # Plot for gifts_gender dataset
       new_gifts_gender <- gifts_gender %>% 
         select(Gender,Candy,Flowers,Jewelry,GreetingCards,EveningOut,Clothing,GiftCards)
       billboarder() %>% bb_barchart(data = new_gifts_gender) %>% 
         bb_color(palette = brewer.pal(n = 5, name = "RdPu")) %>% 
         bb_legend(position = 'right') %>% bb_title("Planned Gifts By Gender") %>%
-  bb_labs(x ="Gender", y ="Percentage(%)")
-    } else if (input$QuantitativeSentiments == "historical_spending") {
+  bb_labs(x ="Gender", y ="Percentage(%)") })
+      
+    output$Percent_Celebrating<- renderBillboarder({
       # Plot for historical_spending dataset
       new_hs <- historical_spending %>%
         select(PercentCelebrating)
       billboarder() %>% bb_linechart(new_hs) %>% 
         bb_color(palette = brewer.pal(n = 5, name = "Spectral"))  %>% 
-      bb_legend(position = 'right')
-    } else if(input$QuantitativeSentiments == "gifts_age") {
+        bb_legend(position = 'right') })
+      
+    output$Spending_by_Age<- renderBillboarder({
       # Plot for gifts_age dataset
-      billboarder() %>% bb_barchart(data = gifts_age ) %>% bb_color("RdPu")
-    }
-  })
-}
+      new_ga <- gifts_age %>%
+        select(Age,SpendingCelebrating)
+      billboarder() %>% bb_barchart(data = new_ga ) %>% 
+        bb_color(palette = brewer.pal(n = 5, name = "Spectral"))
+    })
+  }
+
 
 
 # Create Shiny app ----

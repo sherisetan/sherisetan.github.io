@@ -1,6 +1,7 @@
 library(tm)
 library(wordcloud2)
 
+palette <- brewer.pal(8, "Spectral")
 # Define UI
 ui <- fluidPage(
   titlePanel("Valentine's Day Word Clouds"),
@@ -60,7 +61,7 @@ server <- function(input, output) {
     
     # Generate word cloud
     word_freq_df <- data.frame(word = names(freq), freq = freq)
-    wordcloud2(word_freq_df)
+    wordcloud2(word_freq_df,color = palette)
   })
 }
 
