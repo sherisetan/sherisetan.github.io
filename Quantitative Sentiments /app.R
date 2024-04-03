@@ -56,7 +56,7 @@ server <- function(input, output) {
       # Plot for gifts_age dataset
       new_ga <- gifts_age %>%
         select(Age,SpendingCelebrating)
-      billboarder() %>% bb_barchart(data = new_ga ) %>% 
+      billboarder() %>% bb_barchart(data = new_ga ) %>% bb_linechart(data = new_ga) %>%
         bb_color(palette = brewer.pal(n = 5, name = "Spectral"))
     })
   }
