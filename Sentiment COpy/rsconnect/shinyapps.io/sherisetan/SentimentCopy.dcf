@@ -5,7 +5,7 @@ account: sherisetan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11642380
-bundleId: 8445417
+bundleId: 8448262
 url: https://sherisetan.shinyapps.io/SentimentCopy/
 version: 1
 asMultiple: FALSE
