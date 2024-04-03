@@ -42,21 +42,23 @@ server <- function(input, output) {
       billboarder() %>% bb_barchart(data = new_gifts_gender) %>% 
         bb_color(palette = brewer.pal(n = 5, name = "RdPu")) %>% 
         bb_legend(position = 'right') %>% bb_title("Planned Gifts By Gender") %>%
-  bb_labs(x ="Gender", y ="Percentage(%)") })
+  bb_labs(x ="Gender", y ="Percentage(%)") %>% bb_point(show(TRUE)) })
       
     output$Percent_Celebrating<- renderBillboarder({
       # Plot for historical_spending dataset
       new_hs <- historical_spending %>%
-        select(PercentCelebrating)
-      billboarder() %>% bb_linechart(new_hs) %>% 
+        select(Year,PercentCelebrating)
+      billboarder() %>% bb_linechart(data=new_hs, show_point = TRUE) %>% 
         bb_color(palette = brewer.pal(n = 5, name = "Spectral"))  %>% 
-        bb_legend(position = 'right') })
+        bb_legend(position = 'right') %>% bb_title("Percentage of People Celebrating Valentines Day Over the Years") %>%
+        bb_labs(x ="Years", y ="Percentage(%)") %>% bb_point(shape=25,r=3) })
       
     output$Spending_by_Age<- renderBillboarder({
       # Plot for gifts_age dataset
       new_ga <- gifts_age %>%
         select(Age,SpendingCelebrating)
-      billboarder() %>% bb_barchart(data = new_ga ) %>% bb_linechart(data = new_ga) %>%
+      billboarder() %>% bb_barchart(data = new_ga ) %>% bb_title("Percentage of People Celebrating Valentines Day by Age in 2022") %>%
+        bb_labs(x ="Years", y ="Percentage(%)") %>%
         bb_color(palette = brewer.pal(n = 5, name = "Spectral"))
     })
   }

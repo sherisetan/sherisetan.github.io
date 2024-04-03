@@ -55,7 +55,7 @@ server <- function(input, output) {
       ggplot(total_spending,aes(x=Year,y=Total.Expected.Valentine.s.Day.Spending..in.billions.))+
         geom_line(colour="red") +
         geom_text(aes(label=Total.Expected.Valentine.s.Day.Spending..in.billions.), vjust=2.0, color="black", size=3.5) +
-        geom_point(colour="red")+ 
+        geom_point(colour="red", shape = 25,fill="red")+ 
         labs(x="Year",
              y="Total Spent in Billions($B)",
              title="Total Expenditure Across the Years ")
