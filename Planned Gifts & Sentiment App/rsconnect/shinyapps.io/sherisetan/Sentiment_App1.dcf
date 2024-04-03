@@ -1,0 +1,12 @@
+name: Sentiment_App1
+title: Sentiment_App1
+username: sherisetan
+account: sherisetan
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11642325
+bundleId: 8445380
+url: https://sherisetan.shinyapps.io/Sentiment_App1/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

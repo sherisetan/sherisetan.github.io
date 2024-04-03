@@ -12,6 +12,8 @@ ui <- fluidPage(
   titlePanel("Sentiments towards Valentines Day"),
   sidebarLayout(
     sidebarPanel(
+      checkboxInput("show_noValentines", "Show How People are marking Valentines Day Despite not celebrating ", 
+                    value = FALSE)
     ),
     mainPanel(
       fluidRow(
@@ -48,7 +50,8 @@ server <- function(input, output) {
   
   # Render gifts by gender chart if checkbox is checked
   output$noValentines_chart <- renderBillboarder({
-      new_no_valentines <- NOvalentines %>% 
+    if (input$show_noValentines) {
+      new_no_valentines <- noValentines %>% 
         slice(1:3) %>%
         rename(Reasons= Percent.of.those.not.celebrating.Valentine.s.Day.still.marking.the.occasion) 
       billboarder() %>% bb_barchart(data = new_no_valentines, stacked = T,position = "fill") %>% 
@@ -56,6 +59,7 @@ server <- function(input, output) {
         bb_legend(position = 'right') %>% 
         bb_title("Reasons for marking occasion despite not celebrating") %>% 
         bb_labs(x = "Gender", y = "Percentage(%)")
+    }
   })
 }
 
