@@ -2,9 +2,9 @@
 title: "How do spending trends showcase the shifting attitudes towards Valentines’s Day over the years?"
 ---
 
-Two months ago, a girl took to TikTok to vent about her first date experience: being taken to Lau Pat Sat, a lively hawker centre nestled in the heart of the CBD. Little did she anticipate that her candid TikTok rant would ignite a controversy, with Singaporeans flooding the comments section to share their diverse perspectives on the expectations surrounding dates and partners. While some voiced criticism over her seemingly unrealistic expectations for first dates, citing the costliness of Lau Pat Sat and its decent food offerings, others stood in solidarity with her. They argued that taking her to a hawker centre suggested a lack of effort on the part of the gentleman to make a lasting impression.
+Two months ago, a girl took to TikTok to vent about her first date experience: being taken to Lau Pat Sat, a lively hawker centre nestled in the heart of the Central Business District. Little did she anticipate that her candid TikTok rant would ignite a controversy, with Singaporeans flooding the comments section to share their diverse perspectives on the expectations surrounding dates and partners. While some voiced criticism over her seemingly unrealistic expectations for first dates, citing the costliness of Lau Pat Sat and its decent food offerings, others stood in solidarity with her. They argued that taking her to a hawker centre suggested a lack of effort on the part of the gentleman to make a lasting impression.
 
-```{r,out.height= "300px",out.width= "200px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Reddit"}
+```{r,out.height= "500px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Reddit"}
 knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/lps.png")
 ```
 
