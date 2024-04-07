@@ -42,7 +42,7 @@ server <- function(input, output) {
       select(Point, Women)
     billboarder() %>%
       bb_piechart(data = female_data, label = "Point", values = "Women") %>%
-      bb_color(palette = brewer.pal(n = 5, name = "Oranges")) %>%
+      bb_color(palette = brewer.pal(n = 5, name = "Reds")) %>%
       bb_title("Women")
   })
   
