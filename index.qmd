@@ -8,12 +8,8 @@ Two months ago, a girl took to TikTok to vent about her first date experience: b
 knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/lps.png")
 ```
 
-```{r,out.height= "500px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Tiktok Against LPS"}
-knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/againstlps.png")
-```
-
-```{r,out.height= "500px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Tiktok for LPS"}
-knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/forlps.png")
+```{r,out.height= "500px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Tiktok About Opinions Towards the Controversy"}
+knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/Arguments.png")
 ```
 
 In the midst of the whirlwind of debates surrounding romantic relationships, Valentine's Day lingered heavily on people's minds. With a myriad of expectations and societal norms in play, the question arose: How does one celebrate romantic relationships in a manner that avoids being labeled as "toxic" or raising "red flags"? In this data-driven story, we delve into the insights provided by the National Retail Foundation's Consumer Data Survey on Valentine's Day from 2010 to 2022. By examining spending trends, we aim to shed light on how perceptions and sentiments towards Valentine's Day have evolved over the years and how couples can use these sentiments as a guide to spending a memorable Valentines Day.
