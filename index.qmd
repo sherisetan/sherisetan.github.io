@@ -8,7 +8,7 @@ Two months ago, a girl took to TikTok to vent about her first date experience: b
 knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/lps.png")
 ```
 
-```{r,out.height= "500px",out.width= "500px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Tiktok About Opinions Towards the Controversy"}
+```{r,out.height= "500px",out.width= "800px",echo=TRUE,eval=TRUE,fig.cap="Screencap from Tiktok About Opinions Towards the Controversy"}
 knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/Arguments.png")
 ```
 
