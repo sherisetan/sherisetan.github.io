@@ -23,7 +23,7 @@ ui <- fluidPage(
       h4("Data Analysis"),
       h6("Percentage of People Celebrating Valentines Day Over the Years"),
       p("Unlike the spending trends, the percentage of people celebrating Valentines Day has been on a general decline from 60% in 2010 to 53% in 2022.
-        This may be aligned with recent sentiments that Valentines Day is becoming increasingly commercialised and couples feel less inclined to follow marketing gimmicks of various corporations that dictate how one should celebrate Valentines Day. "),
+        This may be aligned with recent sentiments that Valentines Day is becoming increasingly commercialised by big corporations, causing the hike in expenditure for Valentines Day related goods, which may discourage people from celebrating the occasion. "),
       hr(),
       h6("Percentage of People Celebrating Valentines Day by Age in 2022"),
       p("From the barchart, it is evident that the Valentines Day is the most popular with people between the ages of 18-24 at 51%, before it starts on a steady decline from ages 25-34 all the way to 65+ years old.

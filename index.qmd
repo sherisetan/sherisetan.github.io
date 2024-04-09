@@ -17,12 +17,12 @@ In the midst of the whirlwind of debates surrounding romantic relationships, Val
 In this data-driven story, we delve into the insights provided by the National Retail Foundation's Consumer Data Survey on Valentine's Day from 2010 to 2022. By examining spending trends, we aim to shed light on how perceptions and sentiments towards Valentine's Day have evolved over the years and how couples can use these sentiments as a guide to spending a memorable Valentines Day.
 
 ```{=html}
-<iframe height="400" width="1000" frameborder="no" src="https://sherisetan.shinyapps.io/sample_app/"> </iframe>
+<iframe height="400" width="800" frameborder="no" src="https://sherisetan.shinyapps.io/sample_app/"> </iframe>
 ```
 ```{=html}
-<iframe height="400" width="1000" frameborder="no" src="https://sherisetan.shinyapps.io/quansentiments/"> </iframe>
+<iframe height="400" width="800" frameborder="no" src="https://sherisetan.shinyapps.io/quansentiments/"> </iframe>
 ```
 ```{=html}
-<iframe height="400" width="1000" frameborder="no" src="https://sherisetan.shinyapps.io/SentimentCopy/"> </iframe>
+<iframe height="400" width="800" frameborder="no" src="https://sherisetan.shinyapps.io/SentimentCopy/"> </iframe>
 ```
-So what is the takeaway? It seems that despite the overall increase in Valentines Day Expenditure, lesser people are celebrating the holiday in general.
+So what is the takeaway? It seems that despite the overall increase in Valentines Day Expenditure, lesser people are celebrating the holiday in general. While there are some general norms of what one should get for Valentines Day, there are others who have chose to deviate from the norm and celebrate Valentines Day on their own terms. Hence, whatever way you choose to celebrate the holdiay, as long as you and your partner are agreeable and are both enjoying the celebration, feel free to run wild. After all, who cares about what people on Tiktok think, when the relationship is about the 2 of you.
