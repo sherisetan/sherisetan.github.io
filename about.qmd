@@ -4,8 +4,32 @@ title: "About"
 
 Welcome to my website!!
 
+![its me !](images/IMG_9264.jpeg)
+
+**About Me:**
+
 I am Sherise Tan, a Year 2 Psychology Undergraduate taking the course of NM2207 this semester! I love listening to kpop and playing cozy games.
 
-My identified data set is the National Retail Foundation's Consumer Data Survey on Valentines Day from 2010 to 2022. This data set can be found to come from Suraj Das on Kaggle that can be accessed through the link below: https://www.kaggle.com/datasets/infinator/happy-valentines-day-2022.
+**Identified Dataset**
 
-However, since the dataset is unclean, I will be referencing the cleaned-version as well on tidytuesday on Github as well: https://github.com/rfordatascience/tidytuesday/blob/master/data/2024/2024-02-13/readme.md
+My identified data set is the Valentines Day Data Set provided by Suraj Das on Kaggle that can be accessed through the link below: https://www.kaggle.com/datasets/infinator/happy-valentines-day-2022. This submitted data set takes data from the National Retail Foundation (NRF) Valentines Day Consumer Survey from 2010 to 2022. In 2022, NRF surveyed *7,728* US adult consumers that was conducted in *January 3-11* and has a margin of error of +/- 1.1 percentage points.
+
+However, since the dataset provided on Kaggle is unclean, I will be referencing the cleaned-version as well on tidytuesday on Github as well: https://github.com/rfordatascience/tidytuesday/blob/master/data/2024/2024-02-13/readme.md.
+
+Notice that since this dataset only records data until 2022, the insights provided may not representative to current events. However, it still serves as useful as to how sentiment towards Valentines Day has changed over the course of many years.
+
+**Data Cleaning & Selecting Data for Visualisations**
+
+While most of the data used was derived from the cleaned data on Github, unclean gender-related sentiment data found on Kaggle needed to be used to provide a more holistic attitude towards shift in attitudes towards Valentines Day. Hence, I converted the datasets stored as seperate csv files on Kaggle into excel sheets and manually cleaned the dataframes of its units, before reconverting back the csv files to be opened in Rstudio.
+
+Besides cleaning, I also use the relevant functions to filter data using the tidyverse package to isolate the data that I want to use for data visualisation such as select(), rename etc
+
+**Choice of Data Visualisation**
+
+My choices for data visualisations was heavily limited by the dataset provided. Since much of the data presented was trend related data across time or categories, I chose to use line charts to best demonstrate change across time and bar charts for changes across categories. As for some qualitative gendered sentiment, we felt that representing them in pie charts and stacked bar charts would allow for a clearer representation of the proportion of surveyors that agree with a certain sentiment.
+
+***Citations Used (APA)***
+
+Chang, E. (2020, February 12). *Valentine’s day 2020: How much money will be spent?* TheStreet. https://www.thestreet.com/personal-finance/valentines-day-2020-spending
+
+Singh, R. (2024, February 14). For Gen Z, Valentine’s Day is not just about love anymore. *The Indian Express*. https://indianexpress.com/article/lifestyle/feelings/valentines-day-romantic-love-gen-z-9160341/

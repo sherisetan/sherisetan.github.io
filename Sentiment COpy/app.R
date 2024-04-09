@@ -25,11 +25,12 @@ ui <- fluidPage(
       p("The most popular gift choice across the genders is candy at 52% for men and 59% for women.Besides this,men are more likely to give their partners flowers(56%),greeting cards(37%),evening outs(33%), 
         whereas women are more likely to give their partners greetingcards (43%),evening outs (29%) or giftcards & clothing at 24%. 
         Most notable is the disparity between the choices of gifts chosen amongst the genders. Men are more likely to choose a wider selection of gifts, whereas women tend to gravitate towards a few types of gifts.
-        Hence, it seems to suggest that men take on the heavier burden of procuring the gitfs for Valentines. Most notably the top few gifts are   "),
+        This trend could be attributed to societal expectations that men were expected to be the main gift givers during Valentines Day (Spector, 2017). 
+        However, it also may highlight a changing phenomena whereby women are also starting to take on the gift-giving duty on Valentines Day as well (Spector, 2017). "),
       hr(),
       h6("Reasons for marking Valentines Day and not celebrating it across Genders"),
-      p("Out of population of men(23%) and women(26%) that said they will not be celebrating Valentines Day, majority of them stated using Valentines Day as a reason to treat oneself (Men (11%), Women (16%)) and plan a get-together (Men (10%), Women (8%)).
-      This shows that not everyone is treating Valentines Day strictly as a means of celebrating romantic relationships."),
+      p("Out of population of men (23%) and women (26%) that said they will not be celebrating Valentines Day, majority of them stated using Valentines Day as a reason to treat oneself (Men (11%), Women (16%)) and plan a get-together (Men (10%), Women (8%)).
+      This shows that not everyone is treating Valentines Day strictly as a means of celebrating romantic relationships and there is not much of a difference between such opinions across gender"),
     ),
     mainPanel(
       fluidRow(
