@@ -1,7 +1,7 @@
 library(shiny)
 library(ggplot2)
 library(tidyverse)
-gifts_gender <- read.csv("historical_spending.csv")
+historical_spending <- read.csv("historical_spending.csv")
 total_spending <-read.csv("total_spending_billions.csv")
 
 # Define UI for dataset viewer app ----
@@ -70,7 +70,8 @@ pet companionships (Chang, 2020). ")
         labs(x = "Year",
              y = "Spending Per Person on Valentines Day ($) ",
              title = "Valentines Day spending across the Years",
-             subtitle = "Expenditure per person also saw a steady increase from $103 in 2010 to $175.40 in 2022. 
+             subtitle = 
+             "Expenditure per person also saw a steady increase from $103 in 2010 to $175.40 in 2022. 
 Similar to the spending trends for total expenditure, there was a notable spike in 2020 which could be due to the 
 expanding definition of the holiday (Chang, 2020). ")
     } 
