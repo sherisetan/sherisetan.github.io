@@ -33,3 +33,5 @@ My choices for data visualisations was heavily limited by the dataset provided. 
 Chang, E. (2020, February 12). *Valentine’s day 2020: How much money will be spent?* TheStreet. https://www.thestreet.com/personal-finance/valentines-day-2020-spending
 
 Singh, R. (2024, February 14). For Gen Z, Valentine’s Day is not just about love anymore. *The Indian Express*. https://indianexpress.com/article/lifestyle/feelings/valentines-day-romantic-love-gen-z-9160341/
+
+Spector, N. (2017, February 14). *Valentine’s Day gifts for dudes*. NBC News. https://www.nbcnews.com/business/consumer/what-man-wants-valentine-s-day-gifts-dudes-are-gaining-n720576
