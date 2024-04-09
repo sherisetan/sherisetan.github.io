@@ -1,6 +1,5 @@
 library(shiny)
 library(ggplot2)
-
 library(tidyverse)
 gifts_gender <- read.csv("historical_spending.csv")
 total_spending <-read.csv("total_spending_billions.csv")
@@ -28,7 +27,7 @@ ui <- fluidPage(
                               "Spending Per Person" = "historical_spending"),
                   selected = "total_spending"),
       
-      h6("Data is from National Retail Foundation, Extracted by Suraj Das on Kaggle")
+      h6("Data is from National Retail Foundation, Extracted by Suraj Das on Kaggle"),
       
     ),
     
@@ -65,15 +64,15 @@ the definition of the holiday from being solely for celebrating romantic relatio
 pet companionships (Chang, 2020). ")
     } else if (input$SpendingTrends == "historical_spending") {
       # Plot for historical_spending dataset
-      ggplot(historical_spending, aes(x = Year,y=PerPerson)) + geom_area(fill="pink")+
+      ggplot(historical_spending, aes(x = Year,y= PerPerson)) + geom_area(fill="pink")+
         geom_line(colour="red") + geom_point(shape = 18 ,colour="red",size=3) + 
-        geom_text(aes(label=PerPerson), vjust=2.0, color="black", size=3.5) +
+        geom_text(aes(label= PerPerson), vjust=2.0, color="black", size=3.5) +
         labs(x = "Year",
              y = "Spending Per Person on Valentines Day ($) ",
-             title = "Valentines spending across the Years",
+             title = "Valentines Day spending across the Years",
              subtitle = "Expenditure per person also saw a steady increase from $103 in 2010 to $175.40 in 2022. 
-Similar to the spending trends for total expenditure, there was a notable spike in 2020 which could be due to the expanding definition of the holiday 
-(Chang, 2020). " )
+Similar to the spending trends for total expenditure, there was a notable spike in 2020 which could be due to the 
+expanding definition of the holiday (Chang, 2020). ")
     } 
   })
 }

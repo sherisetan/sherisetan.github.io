@@ -25,4 +25,4 @@ In this data-driven story, we delve into the insights provided by the National R
 ```{=html}
 <iframe height="400" width="1000" frameborder="no" src="https://sherisetan.shinyapps.io/SentimentCopy/"> </iframe>
 ```
-So what is the takeaway?
+So what is the takeaway? It seems that despite the overall increase in Valentines Day Expenditure, lesser people are celebrating the holiday in general.

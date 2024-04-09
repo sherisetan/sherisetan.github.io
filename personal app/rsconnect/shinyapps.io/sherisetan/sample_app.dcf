@@ -1,13 +1,12 @@
 name: sample_app
-title: sample_app
+title:
 username: sherisetan
 account: sherisetan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11570458
-bundleId: 8470847
+bundleId: 8470969
 url: https://sherisetan.shinyapps.io/sample_app/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: installingshiny.R|www/nrf-logo.png

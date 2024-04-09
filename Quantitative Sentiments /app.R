@@ -22,7 +22,7 @@ ui <- fluidPage(
     sidebarPanel(
       h4("Data Analysis"),
       h6("Percentage of People Celebrating Valentines Day Over the Years"),
-      p("However, unlike the spending trends, the percentage of people celebrating Valentines Day has been on a general decline from 60% in 2010 to 53% in 2022.
+      p("Unlike the spending trends, the percentage of people celebrating Valentines Day has been on a general decline from 60% in 2010 to 53% in 2022.
         This may be aligned with recent sentiments that Valentines Day is becoming increasingly commercialised and couples feel less inclined to follow marketing gimmicks of various corporations that dictate how one should celebrate Valentines Day. "),
       hr(),
       h6("Percentage of People Celebrating Valentines Day by Age in 2022"),
@@ -34,7 +34,7 @@ ui <- fluidPage(
       p("The most popular gift choice across the genders is candy at 52% for men and 59% for women.Besides this,men are more likely to give their partners flowers(56%),greeting cards(37%),evening outs(33%), 
         whereas women are more likely to give their partners greetingcards (43%),evening outs (29%) or giftcards & clothing at 24%. 
         Most notable is the disparity between the choices of gifts chosen amongst the genders. Men are more likely to choose a wider selection of gifts, whereas women tend to gravitate towards a few types of gifts.
-        Hence, it seems to suggest that men take on the heavier burden of procuring the gitfs for Valentines  ")
+        Hence, it seems to suggest that men take on the heavier burden of procuring the gitfs for Valentines. Most notably the top few gifts are   ")
     ),
     
     # Main panel for displaying outputs ----
