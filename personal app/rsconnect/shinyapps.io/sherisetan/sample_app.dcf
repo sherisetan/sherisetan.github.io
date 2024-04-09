@@ -5,7 +5,7 @@ account: sherisetan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11570458
-bundleId: 8411592
+bundleId: 8470847
 url: https://sherisetan.shinyapps.io/sample_app/
 version: 1
 asMultiple: FALSE

@@ -5,7 +5,7 @@ account: sherisetan
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 11651908
-bundleId: 8448539
+bundleId: 8469959
 url: https://sherisetan.shinyapps.io/quansentiments/
 version: 1
 asMultiple: FALSE

@@ -36,7 +36,6 @@ ui <- fluidPage(
     mainPanel(
       
       plotOutput("lineplot")
-      
     )
   )
 )
@@ -58,7 +57,12 @@ server <- function(input, output) {
         geom_point(colour="red", shape = 25,fill="red")+ 
         labs(x="Year",
              y="Total Spent in Billions($B)",
-             title="Total Expenditure Across the Years ")
+             title="Total Expenditure Across the Years ",
+             subtitle = 
+            "The total expenditure on Valentines Day has been steadily increasing from $14.7 Billion in 2010 to $23.9 Billion in 2022. 
+Remarkably, there is an obvious peak in Valentines Day expenditure in 2020 at $27.4 Billion. However, this could be attributed to the expansion of 
+the definition of the holiday from being solely for celebrating romantic relationships to celebrating familial,platonic relationships and even 
+pet companionships (Chang, 2020). ")
     } else if (input$SpendingTrends == "historical_spending") {
       # Plot for historical_spending dataset
       ggplot(historical_spending, aes(x = Year,y=PerPerson)) + geom_area(fill="pink")+
@@ -66,7 +70,10 @@ server <- function(input, output) {
         geom_text(aes(label=PerPerson), vjust=2.0, color="black", size=3.5) +
         labs(x = "Year",
              y = "Spending Per Person on Valentines Day ($) ",
-             title = "Valentines spending across the Years")
+             title = "Valentines spending across the Years",
+             subtitle = "Expenditure per person also saw a steady increase from $103 in 2010 to $175.40 in 2022. 
+Similar to the spending trends for total expenditure, there was a notable spike in 2020 which could be due to the expanding definition of the holiday 
+(Chang, 2020). " )
     } 
   })
 }
