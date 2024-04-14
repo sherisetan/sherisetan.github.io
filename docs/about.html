@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -126,12 +160,12 @@ ul.task-list li input[type="checkbox"] {
 <p>Welcome to my website!!</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/IMG_9264.jpeg" class="img-fluid figure-img"></p>
+<p><img src="images/IMG_9264.jpeg" class="img-fluid figure-img" width="290"></p>
 <figcaption class="figure-caption">its me !</figcaption>
 </figure>
 </div>
 <p><strong>About Me:</strong></p>
-<p>I am Sherise Tan, a Year 2 Psychology Undergraduate taking the course of NM2207 this semester! I love listening to kpop and playing cozy games.</p>
+<p>I am Sherise Tan, a Year 2 Psychology Undergraduate taking the course of NM2207 this semester! I love listening to kpop, dancing and playing cozy games.</p>
 <p><strong>Identified Dataset</strong></p>
 <p>My identified data set is the Valentines Day Data Set provided by Suraj Das on Kaggle that can be accessed through the link below: https://www.kaggle.com/datasets/infinator/happy-valentines-day-2022. This submitted data set takes data from the National Retail Foundation (NRF) Valentines Day Consumer Survey from 2010 to 2022. In 2022, NRF surveyed <em>7,728</em> US adult consumers that was conducted in <em>January 3-11</em> and has a margin of error of +/- 1.1 percentage points.</p>
 <p>However, since the dataset provided on Kaggle is unclean, I will be referencing the cleaned-version as well on tidytuesday on Github as well: https://github.com/rfordatascience/tidytuesday/blob/master/data/2024/2024-02-13/readme.md.</p>
@@ -143,11 +177,32 @@ ul.task-list li input[type="checkbox"] {
 <p>My choices for data visualisations was heavily limited by the dataset provided. Since much of the data presented was trend related data across time or categories, I chose to use line charts to best demonstrate change across time and bar charts for changes across categories. As for some qualitative gendered sentiment, we felt that representing them in pie charts and stacked bar charts would allow for a clearer representation of the proportion of surveyors that agree with a certain sentiment.</p>
 <p>As I wanted to make the webpage more interactive beyond just showing data, I went on to discover the billboarder package that allowed web-users to hover over each observation and allowed them to show and hide certain</p>
 <p><strong>Choice of Narrative</strong></p>
-<p>My choice of narrative for this data story is related to my choice of dataset. Prior to this project, I was worried about my ability to craft a story to integrate seamlessly into the data analysis. I have a background in psychology which meant that I was used to evaluating data and results rather than creating stories. Hence, to reduce the potential difficulty with crafting a narrative, I chose to find datasets that provided opportunities for trend related analysis and was of a topic that I was very interested. Eventually, I chose to use the Valentines Day Trends dataset as it corroborated with my interest in finding out how my expectations towards Valentines Day stood compared to the rest of society. Afterwards, crafting the narrative became easier because it was also trying to answer something I always wanted to know as well. I eventually chose the most recent romance debate on Tiktok on the Lau Pat Sat</p>
+<p>My choice of narrative for this data story is related to my choice of dataset. Prior to this project, I was worried about my ability to craft a story to integrate seamlessly into the data analysis. I have a background in psychology which meant that I was used to evaluating data and results rather than creating stories. Hence, to reduce the potential difficulty with crafting a narrative, I chose to find datasets that provided opportunities for trend related analysis and was of a topic that I was very interested. Eventually, I chose to use the Valentines Day Trends dataset as it corroborated with my interest in finding out how my expectations towards Valentines Day stood compared to the rest of society. Afterwards, crafting the narrative became easier because it was also trying to answer something I always wanted to know as well. I eventually chose the most recent romance debate on Tiktok on the Lau Pat Sat as it also just coincided with period prior to Valentines Day.</p>
+<p><strong>R Techniques Used</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>topics <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Course Introduction"</span>, <span class="st">"Intorduction to ggplot"</span>,<span class="st">"Manipulating data"</span>, <span class="st">"Visualizing data - 1"</span>,<span class="st">"Visualizing data - 2"</span>,<span class="st">"Billboarder Package"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>weeks <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="st">"Self Taught"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>topics_table <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Topic=</span> topics,<span class="at">Week =</span> weeks)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(topics_table)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                   Topic        Week
+1    Course Introduction           1
+2 Intorduction to ggplot           2
+3      Manipulating data           4
+4   Visualizing data - 1           7
+5   Visualizing data - 2           8
+6    Billboarder Package Self Taught</code></pre>
+</div>
+</div>
+<p>Most of the techniques used can be found from previous weeks assignments. The billboarder package that allowed me the use of piecharts and stacked bar charts was easy to learn from online resources and guides as its data structure was similar to that of tidyverse package.</p>
+<p><strong>Takeaways from the Module</strong></p>
+<p>From this module, I have not only expanded my view on the perceived uses of Rstudio, but also have gained confidence in making my own personal projects with the use of coding.</p>
 <p><strong><em>Citations Used (APA)</em></strong></p>
-<p>Chang, E. (2020, February 12). <em>Valentine’s day 2020: How much money will be spent?</em> TheStreet. https://www.thestreet.com/personal-finance/valentines-day-2020-spending</p>
+<p>Ray, C. R. (2022). <em>Romantic Media Exposure’s Effect on Relationship Beliefs and Expectations</em> [Appalachian State University ]. https://libres.uncg.edu/ir/asu/f/Ray_Catelyn_Spring%202022_thesis.pdf</p>
+<p>Schmanske, H. (2018, February 14). Unrealistic expectations of love. <em>The University Star</em>. https://universitystar.com/21496/opinions/unrealistic-expectations-of-love/</p>
 <p>Singh, R. (2024, February 14). For Gen Z, Valentine’s Day is not just about love anymore. <em>The Indian Express</em>. https://indianexpress.com/article/lifestyle/feelings/valentines-day-romantic-love-gen-z-9160341/</p>
 <p>Spector, N. (2017, February 14). <em>Valentine’s Day gifts for dudes</em>. NBC News. https://www.nbcnews.com/business/consumer/what-man-wants-valentine-s-day-gifts-dudes-are-gaining-n720576</p>
+<p>SPOR. (n.d.). <em>Economy and labour market</em>. Singapore Public Sector Outcome Review. https://www.mof.gov.sg/singapore-public-sector-outcomes-review/businesses/strong-and-resilient-economy/economy-and-labour-market</p>
 
 
 

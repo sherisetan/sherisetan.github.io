@@ -4,11 +4,11 @@ title: "Writeup"
 
 Welcome to my website!!
 
-![its me !](images/IMG_9264.jpeg)
+![its me !](images/IMG_9264.jpeg){width="290"}
 
 **About Me:**
 
-I am Sherise Tan, a Year 2 Psychology Undergraduate taking the course of NM2207 this semester! I love listening to kpop and playing cozy games.
+I am Sherise Tan, a Year 2 Psychology Undergraduate taking the course of NM2207 this semester! I love listening to kpop, dancing and playing cozy games.
 
 **Identified Dataset**
 
@@ -32,12 +32,31 @@ As I wanted to make the webpage more interactive beyond just showing data, I wen
 
 **Choice of Narrative**
 
-My choice of narrative for this data story is related to my choice of dataset. Prior to this project, I was worried about my ability to craft a story to integrate seamlessly into the data analysis. I have a background in psychology which meant that I was used to evaluating data and results rather than creating stories. Hence, to reduce the potential difficulty with crafting a narrative, I chose to find datasets that provided opportunities for trend related analysis and was of a topic that I was very interested. Eventually, I chose to use the Valentines Day Trends dataset as it corroborated with my interest in finding out how my expectations towards Valentines Day stood compared to the rest of society. Afterwards, crafting the narrative became easier because it was also trying to answer something I always wanted to know as well. I eventually chose the most recent romance debate on Tiktok on the Lau Pat Sat
+My choice of narrative for this data story is related to my choice of dataset. Prior to this project, I was worried about my ability to craft a story to integrate seamlessly into the data analysis. I have a background in psychology which meant that I was used to evaluating data and results rather than creating stories. Hence, to reduce the potential difficulty with crafting a narrative, I chose to find datasets that provided opportunities for trend related analysis and was of a topic that I was very interested. Eventually, I chose to use the Valentines Day Trends dataset as it corroborated with my interest in finding out how my expectations towards Valentines Day stood compared to the rest of society. Afterwards, crafting the narrative became easier because it was also trying to answer something I always wanted to know as well. I eventually chose the most recent romance debate on Tiktok on the Lau Pat Sat as it also just coincided with period prior to Valentines Day.
+
+**R Techniques Used**
+
+```{r, eval=TRUE,echo=TRUE}
+topics <- c("Course Introduction", "Intorduction to ggplot","Manipulating data", "Visualizing data - 1","Visualizing data - 2","Billboarder Package")
+weeks <- c(1,2,4,7,8,"Self Taught")
+topics_table <- data.frame(Topic= topics,Week = weeks)
+print(topics_table)
+```
+
+Most of the techniques used can be found from previous weeks assignments. The billboarder package that allowed me the use of piecharts and stacked bar charts was easy to learn from online resources and guides as its data structure was similar to that of tidyverse package.
+
+**Takeaways from the Module**
+
+From this module, I have not only expanded my view on the perceived uses of Rstudio, but also have gained confidence in making my own personal projects with the use of coding.
 
 ***Citations Used (APA)***
 
-Chang, E. (2020, February 12). *Valentine’s day 2020: How much money will be spent?* TheStreet. https://www.thestreet.com/personal-finance/valentines-day-2020-spending
+Ray, C. R. (2022). *Romantic Media Exposure’s Effect on Relationship Beliefs and Expectations* \[Appalachian State University \]. https://libres.uncg.edu/ir/asu/f/Ray_Catelyn_Spring%202022_thesis.pdf
+
+Schmanske, H. (2018, February 14). Unrealistic expectations of love. *The University Star*. https://universitystar.com/21496/opinions/unrealistic-expectations-of-love/
 
 Singh, R. (2024, February 14). For Gen Z, Valentine’s Day is not just about love anymore. *The Indian Express*. https://indianexpress.com/article/lifestyle/feelings/valentines-day-romantic-love-gen-z-9160341/
 
 Spector, N. (2017, February 14). *Valentine’s Day gifts for dudes*. NBC News. https://www.nbcnews.com/business/consumer/what-man-wants-valentine-s-day-gifts-dudes-are-gaining-n720576
+
+SPOR. (n.d.). *Economy and labour market*. Singapore Public Sector Outcome Review. https://www.mof.gov.sg/singapore-public-sector-outcomes-review/businesses/strong-and-resilient-economy/economy-and-labour-market
