@@ -1,4 +1,5 @@
 library(tm)
+library(RColorBrewer)
 library(wordcloud2)
 
 palette <- brewer.pal(8, "Spectral")
