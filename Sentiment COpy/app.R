@@ -14,7 +14,6 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       h4("Data Insights"),
-      hr(),
       h6("Sentiments towards the point of Valentines Day across Genders"),
       p("The top three reasons women feel that Valentines Day is important are to 'Show How Much You Care' (51%),'To Treat Yourself' (14%),'To buy someone gifts' (12%).
     On the contrary, the top three reasons men feel that Valentines Day is important is to 'Show How much you care' (29%), 'Sex' (25%), 'To Go Out for Dinner'(18%).
@@ -30,7 +29,7 @@ ui <- fluidPage(
       hr(),
       h6("Reasons for marking Valentines Day and not celebrating it across Genders"),
       p("Out of population of men (23%) and women (26%) that said they will not be celebrating Valentines Day, majority of them stated using Valentines Day as a reason to treat oneself (Men (11%), Women (16%)) and plan a get-together (Men (10%), Women (8%)).
-      This shows that not everyone is treating Valentines Day strictly as a means of celebrating romantic relationships and there is not much of a difference between such opinions across gender"),
+      This shows that not everyone is treating Valentines Day strictly as a means of celebrating romantic relationships and there is not much of a difference between such opinions across gender."),
     ),
     mainPanel(
       fluidRow(
