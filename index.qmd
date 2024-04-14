@@ -23,14 +23,14 @@ Through this dataset, we wish to answer the following questions:
 3.  **What are gender differences in sentiments towards Valentines Day ?**
 
 ```{=html}
-<iframe height="500" width="800" frameborder="no" src="https://sherisetan.shinyapps.io/sample_app/"> </iframe>
+<iframe height="500" width="1100" frameborder="no" src="https://sherisetan.shinyapps.io/sample_app/"> </iframe>
 ```
 **What are the spending trends related to Valentines Day?**
 
 Answer: Expenditure is increasing overall from 2010 to 2022
 
 ```{=html}
-<iframe height="1000" width="800" frameborder="no" src="https://sherisetan.shinyapps.io/quansentiments/"> </iframe>
+<iframe height="1000" width="1000" frameborder="no" src="https://sherisetan.shinyapps.io/quansentiments/"> </iframe>
 ```
 **What are the quantitative sentiments towards Valentines Day**
 

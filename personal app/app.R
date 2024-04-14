@@ -59,9 +59,11 @@ server <- function(input, output) {
              title="Total Expenditure Across the Years ",
              subtitle = 
             "The total expenditure on Valentines Day has been steadily increasing from $14.7 Billion in 2010 to $23.9 Billion in 2022. 
-Remarkably, there is an obvious peak in Valentines Day expenditure in 2020 at $27.4 Billion. However, this could be attributed to the expansion of 
-the definition of the holiday from being solely for celebrating romantic relationships to celebrating familial,platonic relationships and even 
-pet companionships (Chang, 2020). ")
+Remarkably, there is an obvious peak in Valentines Day expenditure in 2020 at $27.4 Billion. Rather than being 
+attributed to a specific reason, Valentines Day spending trajectory was anctipated to increase. 
+However, due to onset of the pandemic in 2020,it severly disrupted global economic activity, causing job losses 
+(SPOR, n.d.).Hence, this resulted in a significant drop in Valentines Day spenditure from 2020 to 2021.We can see 
+this increasing expenditure trend pick up from 2021 to 2022, albeit much slower due to the recovering economy  ")
     } else if (input$SpendingTrends == "historical_spending") {
       # Plot for historical_spending dataset
       ggplot(historical_spending, aes(x = Year,y= PerPerson)) + geom_area(fill="pink")+
@@ -72,8 +74,10 @@ pet companionships (Chang, 2020). ")
              title = "Valentines Day spending across the Years",
              subtitle = 
              "Expenditure per person also saw a steady increase from $103 in 2010 to $175.40 in 2022. 
-Similar to the spending trends for total expenditure, there was a notable spike in 2020 which could be due to the 
-expanding definition of the holiday (Chang, 2020). ")
+Similar to the spending trends for total expenditure, there was a notable spike in 2020 which could be attributed to
+the onset of pandemic in 2020, causing reduced consumption towards Valentines day from 2021 to 2022 as 
+(SPOR, n.d.).It can be reasoned that this is because Valentines Day is not seen as a necessity in a 
+climate of financial instability and uncertainty.")
     } 
   })
 }
