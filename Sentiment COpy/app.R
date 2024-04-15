@@ -17,7 +17,7 @@ ui <- fluidPage(
       h6("Sentiments towards the point of Valentines Day across Genders"),
       p("The top three reasons women feel that Valentines Day is important are to 'Show How Much You Care' (51%),'To Treat Yourself' (14%),'To buy someone gifts' (12%).
     On the contrary, the top three reasons men feel that Valentines Day is important is to 'Show How much you care' (29%), 'Sex' (25%), 'To Go Out for Dinner'(18%).
-    This disaprity shows that men and women have different view towards the significance of Valentines Day. Hence, generisations on how one should celebrate Valentines Day cannot be made across men and women.
+    This disaprity shows that men and women have different view towards the significance of Valentines Day. Hence, generalisations on how one should celebrate Valentines Day cannot be made across men and women.
       "),
       hr(),
       h6("Planned Gifts By Gender"),
