@@ -20,9 +20,9 @@ Notice that since this dataset only records data until 2022, the insights provid
 
 **Data Cleaning & Selecting Data for Visualisations**
 
-While most of the data used was derived from the cleaned data on Github, unclean gender-related sentiment data found on Kaggle needed to be used to provide a more holistic attitude towards shift in attitudes towards Valentines Day. Hence, I converted the datasets stored as seperate csv files on Kaggle into excel sheets and manually cleaned the dataframes of its units, before reconverting back the csv files to be opened in Rstudio.
+While most of the data used was derived from the cleaned data on Github, unclean gender-related sentiment data found on Kaggle needed to be used to provide a more comprehensive appraisal of shifts in attitudes towards Valentines Day. Hence, I converted the datasets stored as seperate csv files on Kaggle into excel sheets and manually cleaned the dataframes of its units, before reconverting back the csv files to be opened in Rstudio.
 
-Besides cleaning, I also use the relevant functions to filter data using the tidyverse package to isolate the data that I want to use for data visualisation such as select(), rename etc
+Besides cleaning, I also use the relevant commands to filter using the tidyverse package to isolate the data that I want to use for data visualisation like select(). I also had to rename a few columns to shorten the variable name.
 
 **Choice of Data Visualisation**
 
