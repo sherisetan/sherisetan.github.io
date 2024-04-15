@@ -35,24 +35,26 @@ Expenditure is increasing overall from 2010 to 2022. A peak is observed not beca
 ```
 **What are the quantitative sentiments towards Valentines Day**
 
-Although spending trends suggest an increase in celebration, the percentage of people actually celebrating the holiday is decreasing from 2010 to 2022 instead. This could suggest that instead of associating with increased celebration, spending trends could be hinting to an increase in commercialisation of the holiday, causing prices for Valentines Day related items to rise.
+Although spending trends suggest an increase in celebration, the percentage of people actually celebrating the holiday is decreasing from 2010 to 2022 instead. This could suggest that instead of associating with increased celebration, spending trends could be hinting to an increase in commercialisation of the holiday, causing prices for Valentines Day related items to rise. Hence, the increase in expenditure is simply an increase
 
-We have also noted that young adults (Gen Z aged 18-25) have the most percentage of people celebrating this holiday and this observation decreases as the age groups increase. However, this could be attributed to the broadening definitions of Valentines Day than increased in emphasis on romantic relationships.
+We have also noted that young adults (Gen Z aged 18-25) have the most percentage of people celebrating this holiday and this observation decreases as the age groups increase. However, this could be attributed to the broadening definitions of Valentines Day than the increased emphasis on romantic relationships.
 
 ```{=html}
 <iframe height="600" width="900" frameborder="no" src="https://sherisetan.shinyapps.io/SentimentCopy/"> </iframe>
 ```
 **What are gender differences in sentiments towards Valentines Day ?**
 
-Sentiments towards Valentines Day should not be taken towards homogenous across genders, as evident by the differing expectations towards Valentines Day.
+Sentiments towards Valentines Day should not be taken as homogenous across genders, as evident by the differing expectations towards the point of Valentines Day.
 
-However, there seems to be attempts to level the paying field when it comes to Valentines Day, with women starting to take on responsibilities initially reserved for men on Valentines Day such as gift giving. Furthermore, men and women do not differ substantially on their alternative plans to mark the occasion despite not celebrating Valentines Day, which highlights a shift in gendered demands of Valentines Day, with men and women now facing relatively similar expectations.
+However, there seems to be attempts to level the paying field when it comes to Valentines Day, with women starting to take on responsibilities initially reserved for men on Valentines Day such as gift giving. Furthermore, men and women do not differ substantially on their alternative plans to mark the occasion despite not celebrating Valentines Day, which highlights a shift in gendered demands of Valentines Day, with men and women now having relatively similar expectations.
 
 **What's the takeaway?**
 
-Just like the infamous "Lau Pat Sat" girl, many people are prone to having an overly romanticised view on how romantic relationships and how romantic celebrations work. Due to the **advent rise of romantic movie media**, this has warped our perceptions and satisfaction of real life relationships (Ray, 2022). Furthermore, the popularity of **social media** usage has caused us to be more **prone to comparisons and unrealistic expectations** from viewing performative posts on love (Schmanske, 2018). Hence, based on spending trends and the percentage of people celebrating, we can see that **there are people who are willing to pay more for Valentines Day to meet such fantasy's of Valentines Day**. However, based on sentiment data, we can tell that **there is a trend where people are trying to move away from this media imposed expectations of relationships** as there as lesser people celebrating it and men and women are sharing similar burdens and expectations towards Valentines Day.
+Just like the infamous "Lau Pat Sat" girl, many people are prone to having an overly romanticised view on how romantic relationships and how romantic celebrations work. Due to the **advent rise of romantic movie media**, this has warped our perceptions and satisfaction of real life relationships (Ray, 2022). Furthermore, the popularity of **social media** usage has caused us to be more **prone to comparisons and unrealistic expectations** from viewing performative posts on love (Schmanske, 2018).
 
-Therefore, we can conclude that **increased expenditure may not always equate to more love** between couples. Instead of trying to follow the popular way of celebrating Valentines Day, ***we should focus on what truly matters in the relationship,*** even if its not about materialistic possessions but quality time. So go on and celebrate Valentines Day on your own terms! After all, ***Valentines Day is just a day, there are many ways of expressing affection love besides doing so on this specific day***❣️
+Based on spending trends and the percentage of people celebrating, we can see that while there is an increase in expenditure, this does not mean more people are celebrating the occasion, but rather the inflation of prices. With this increasing spending trend, it can be presumed that **there is still a group people who are willing to pay exorbitant prices to meet their fantasy of Valentines Day**. However, based on sentiment data, we can tell that **there is a trend where people are trying to move away from this media-imposed expectations of relationships** as there as people celebrating it via alternative means and men and women are starting to share similar burdens and expectations towards Valentines Day.
+
+Therefore, we can conclude that **increased expenditure may not always equate to more love** between couples. Instead of trying to uphold unrealistic fantasies of celebrating Valentines Day, ***we should focus on what truly matters in the relationship,*** **genuine connections over materialistic possessions**. So go on and celebrate Valentines Day on your own terms! After all, ***Valentines Day is just a day, there are many ways of expressing affection love besides doing so on this specific day*** ❣️
 
 ```{r,out.height= "200px",out.width= "800px",echo=TRUE,eval=TRUE,fig.cap="Made with Canva"}
 knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io/hvd.png")
