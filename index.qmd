@@ -19,8 +19,8 @@ In this data-driven story, we delve into the insights provided by the National R
 
 To gain better clarity of the data provided, we will attempt to answer the following sub-questions:
 
-1.  **What are the spending trends related to Valentines Day**
-2.  **What are the quantitative sentiments towards Valentines Day**
+1.  **What are the spending trends related to Valentines Day ?**
+2.  **What are the quantitative sentiments towards Valentines Day ?**
 3.  **What are gender differences in sentiments towards Valentines Day ?**
 
 ```{=html}
