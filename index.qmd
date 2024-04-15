@@ -1,5 +1,5 @@
 ---
-title: "How do spending trends showcase the shifting attitudes towards Valentines’s Day over the years?"
+title: "How do consumption trends showcase the shifting attitudes towards Valentines’s Day over the years?"
 subtitle: "By Sherise Tan Qin Lin, For NM2207"
 ---
 
@@ -15,9 +15,9 @@ knitr::include_graphics("/Users/sheriseses/Documents/Github/sherisetan.github.io
 
 In the midst of the whirlwind of debates surrounding romantic relationships, Valentine's Day lingered heavily on people's minds. With a myriad of expectations and societal norms in play, the question arose: How does one celebrate romantic relationships in a manner that avoids being labeled as "toxic" or raising "red flags"?
 
-In this data-driven story, we delve into the insights provided by the National Retail Foundation's Consumer Data Survey on Valentine's Day from 2010 to 2022.
+In this data-driven story, we delve into the insights provided by the National Retail Foundation's Consumer Data Survey on Valentine's Day from 2010 to 2022. By looking at the consumption trends, we wish to find out how sentiments towards Valentines Day have changed over the years.
 
-Through this dataset, we wish to answer the following questions:
+To gain better clarity of the data provided, we will attempt to answer the following sub-questions:
 
 1.  **What are the spending trends related to Valentines Day**
 2.  **What are the quantitative sentiments towards Valentines Day**
